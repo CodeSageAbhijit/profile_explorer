@@ -21,7 +21,9 @@ Flutter assignment for Starkzapp - A profile browsing app with Clean Architectur
 ## Installation
 
 Clone repo
+
 git clone github.com/CodeSageAbhijit/profile_explorer
+
 cd profile-explorer-app
 
 Install dependencies
@@ -44,7 +46,9 @@ flutter run
 
 lib/
 ├── data/ # API calls, models, repository impl
+
 ├── domain/ # Entities, repository interfaces
+
 └── presentation/ # UI, providers, widgets
 
 text
