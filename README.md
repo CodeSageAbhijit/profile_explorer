@@ -1,16 +1,79 @@
-# profile_explore
+# Profile Explorer App
 
-A new Flutter project.
+Flutter assignment for Starkzapp - A profile browsing app with Clean Architecture and Riverpod state management.
 
-## Getting Started
+## Features
+- Grid view of 20 random user profiles
+- Real-time search by name/city
+- Twitter-like heart animation
+- Profile detail view with Hero transitions
+- Pull-to-refresh
+- Image prefetching (no lazy loading)
+- Clean Architecture + MVVM
 
-This project is a starting point for a Flutter application.
+## Tech Stack
+- Flutter 3.x
+- Riverpod 2.5.1
+- cached_network_image 3.3.1
+- google_fonts 6.2.1
+- http 1.2.0
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Clone repo
+git clone github.com/CodeSageAbhijit/profile_explorer
+cd profile-explorer-app
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Install dependencies
+flutter pub get
+
+Run app
+flutter run
+
+
+
+
+**Fields Used:**
+- name.first, name.last
+- picture.large
+- dob.age
+- location.city, location.country
+- login.uuid
+
+## Architecture
+
+lib/
+├── data/ # API calls, models, repository impl
+├── domain/ # Entities, repository interfaces
+└── presentation/ # UI, providers, widgets
+
+text
+
+## Assignment Requirements ✅
+- [x] Grid layout with profile cards
+- [x] Like functionality with state sync
+- [x] Profile detail screen
+- [x] Clean Architecture
+- [x] Riverpod state management
+- [x] Error handling
+- [x] Hero animations (Bonus)
+- [x] Pull-to-refresh (Bonus)
+- [x] Search filter (Bonus)
+
+## Build
+
+Android APK
+flutter build apk --release
+
+iOS
+flutter build ios --release
+
+text
+
+## Author
+**[Abhijit Kad]**  
+Email: abhijitkad62@gmail.com
+
+
+---
+Built for Starkzapp Flutter Developer Assignment
